@@ -1,0 +1,28 @@
+.news__btn {
+  position: absolute;
+  bottom: 4rem;
+  right: 7rem;
+  z-index: 3;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  & svg {
+    fill: #1c42eb;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  & span {
+    position: relative;
+    bottom: 4.3rem;
+    left: 7.3rem;
+    background-color: rgb(255, 24, 24);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    z-index: 100;
+  }
+}
