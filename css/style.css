@@ -80,7 +80,7 @@ p {
     font-weight: 300;
     overflow: hidden; }
   .widget__sub-header {
-    display: inline-block;
+    display: block;
     font-size: 1.4rem;
     color: #616161; }
   .widget__item-date {
