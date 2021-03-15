@@ -22,7 +22,6 @@ getApi();
 //Создаем отдельную новоть
 
 function createNewsItem({ title, author, published, url, id }) {
-  console.log(published);
   const date = published.split(" ")[0];
   const time = published.split(" ")[1];
   const html = `
@@ -30,7 +29,7 @@ function createNewsItem({ title, author, published, url, id }) {
           <div class="widget__item-header">
             <h3 class="widget__item-title">${title}</h3>
             <p class="widget__sub-header">
-              Автор: <span class="widget__item-author">${author}</span>,
+              Автор: <span class="widget__item-author">${author}</span>
             </p>
             <p class="widget__sub-header">
               Дата: <span class="widget__item-author">${date}, ${time}</span>
