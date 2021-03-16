@@ -13,6 +13,8 @@ async function getApi() {
     const response = await fetch(
       "https://api.currentsapi.services/v1/latest-news?language=ru&apiKey=tvf7Xbrnpe9cglOvsSP4OKryB1b9-S8edbs_VU7U-1VxoJgo"
     );
+    if (!response.ok) throw new Error("Какие-то проблемы...");
+
     const data = await response.json();
 
     newsBtn.classList.remove("hide");
